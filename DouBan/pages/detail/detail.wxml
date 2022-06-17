@@ -1,0 +1,47 @@
+<view class="item-header">
+  <view class="item-title">{{item.title}} {{item.original_title}}（{{item.year}}）</view>
+  <view class="item-detail">
+    <view class="left-detail">
+      <!-- 评分 -->
+      <view class="item-rate">
+        <stars rate="{{item.rating.value}}" starsize="30" fontsize="30" fontcolor="#595959"></stars>
+        <text class="comment-persons">{{item.rating.count}}人评价</text>
+      </view>
+      <!-- 电影信息 -->
+      <view class="item-sub-detail">
+        <view class="item-type">
+          {{item.durations[0]}} {{item.genres}}
+        </view>
+        <view class="item-show">
+          {{item.pubdate[0]}}上映 {{item.countries[0]}}
+        </view>
+        <view class="actors">
+          {{item.authors}}
+        </view>
+      </view>
+    </view>
+    <!-- 电影封面 -->
+    <view class="right-detail">
+      <image src="{{item.cover.image.small.url}}"></image>
+    </view>
+  </view>
+</view>
+
+<!-- 标签 -->
+<view class="item-tags">
+  <view class="item-tags-title">豆瓣成员常用标签</view>
+  <view class="item-tags-list">
+    <text wx:for="{{tags}}" wx:key="*this">{{item}}</text>
+  </view>
+</view>
+
+<!-- 评论 -->
+<view class="comment-list-group">
+  <view class="comment-title">短评({{comment.total}})</view>
+  <comment wx:for="{{comment.interests}}" wx:key="{{item.id}}" item="{{item}}"></comment>
+</view>
+
+<!-- 查看更多短评 -->
+<navigator class="more-comment"
+  url="/pages/comments/comments?id={{id}}&type={{type}}&thumbnail={{item.cover.image.small.url}}&title={{item.title}}&rate={{item.rating.value}}">
+  查看更多短评</navigator>

@@ -1,0 +1,14 @@
+<!--components/stars/stars.wxml-->
+<view class='rate-group'>
+  <!-- 全黄 -->
+  <image style='width:{{starsize}}rpx;height:{{starsize}}rpx;' wx:for="{{lights}}" wx:key="*this"
+    src='/images/rate_light.png'></image>
+  <!-- 半黄半灰 -->
+  <image style='width:{{starsize}}rpx;height:{{starsize}}rpx;' wx:for="{{halfs}}" wx:key="*this"
+    src='/images/rate_half.png'></image>
+  <!-- 全灰 -->
+  <image style='width:{{starsize}}rpx;height:{{starsize}}rpx;' wx:for="{{grays}}" wx:key="*this"
+    src='/images/rate_gray.png'></image>
+  <!-- 评分 -->
+  <text wx:if="{{istext}}" style='font-size:{{fontsize}}rpx;color:{{fontcolor}};'>{{ratetext}}</text>
+</view>

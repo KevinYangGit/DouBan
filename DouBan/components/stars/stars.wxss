@@ -1,0 +1,17 @@
+/* components/stars/stars.wxss */
+
+.rate-group {
+  /* 这是布局方式为 flex */
+  display: flex;
+  /* 水平居中 */
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;
+  font-size: 20rpx;
+  color: #ccc;
+}
+
+.rate-group image {
+  width: 20rpx;
+  height: 20rpx;
+}

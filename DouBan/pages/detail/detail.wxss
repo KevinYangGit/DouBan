@@ -1,0 +1,99 @@
+.item-header {
+  padding: 60rpx 30rpx;
+}
+
+/* 电影名称 */
+.item-header .item-title {
+  font-size: 50rpx;
+}
+
+/* 评分 */
+.item-header .item-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.item-detail .left-detail {
+  flex: 1;
+  margin-right: 20rpx; 
+}
+
+.left-detail .item-rate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item-rate .comment-persons {
+  font-size: 28rpx;
+  color: #ccc;
+  margin-left: 20rpx;
+}
+
+/* 电影封面 */
+.item-detail .right-detail {
+  width: 200rpx;
+  height: 300rpx;
+}
+
+.right-detail image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 电影信息 */
+.item-sub-detail {
+  margin-top: 40rpx;
+  font-size: 32rpx;
+}
+
+.item-sub-detail view {
+  margin-bottom: 10rpx;
+}
+
+/* 标签 */
+.item-tags {
+  padding: 0rpx 30rpx;
+}
+
+.item-tags .item-tags-title {
+  color: #b3b3b3;
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+}
+
+.item-tags .item-tags-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.item-tags-list text {
+  padding: 10rpx 20rpx;
+  background-color: #f5f5f5;
+  font-size: 32rpx;
+  color: #353535;
+  text-align: center;
+  border-radius: 40rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+/* 评论列表 */
+.comment-list-group {
+  padding: 60rpx 30rpx;
+}
+
+.comment-list-group .comment-title {
+  font-size: 32rpx;
+  color: #b3b3b3;
+}
+
+/* 查看更多短评 */
+.more-comment {
+  text-align: center;
+  font-size: 36rpx;
+  color: #41be57;
+  margin-bottom: 40rpx;
+}

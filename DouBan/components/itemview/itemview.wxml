@@ -1,0 +1,15 @@
+<navigator wx:if="{{item}}" class='item-navigator' url="{{itemurl}}">
+  <view class='item-group'>
+    <!-- 封面 -->
+    <view class='thumbnail-group'>
+      <image class='thumbnail' src='{{item.cover.url}}'></image>
+    </view>
+    <!-- 名称 -->
+    <view class='item-title'>{{item.title}}</view>
+    <!-- 评分 -->
+    <stars rate="{{item.rating.value}}"></stars>
+  </view>
+</navigator>
+
+<!-- 占位view -->
+<view wx:else class="item-navigator"></view>

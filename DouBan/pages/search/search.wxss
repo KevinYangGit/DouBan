@@ -1,0 +1,79 @@
+.item-list-group {
+  padding: 10rpx 20rpx;
+}
+
+.item-list-group .item-group {
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #e4e4e4;
+  display: flex;
+}
+
+.item-group .thumbnail{
+  width: 80rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+
+.item-group .info-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-group .title {
+  font-size: 32rpx;
+}
+
+.info-group .rate-year {
+  font-size: 28rpx;
+  color: #7b7b7b;
+}
+
+
+
+.history-list-group {
+  padding: 10rpx 20rpx;
+}
+
+.history-list-group .history-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  background: #f9f9f9;
+  font-size: 28rpx;
+  color: #9e9e9e;
+}
+
+.history-list-group .history-group {
+  font-size: 32rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #e4e4e4;
+}
+
+/* 
+ padding:10px 5px 15px 20px;
+ 
+ 上内边距是 10px
+ 右内边距是 5px
+ 下内边距是 15px
+ 左内边距是 20px
+
+ ---------
+ padding:10px 5px 15px;
+
+ 上内边距是 10px
+ 右内边距和左内边距是 5px
+ 下内边距是 15px
+
+ ---------
+ padding:10px 5px;
+
+ 上内边距和下内边距是 10px
+ 右内边距和左内边距是 5px
+
+ ---------
+ padding:10px;
+
+ 所有 4 个内边距都是 10px
+ */
